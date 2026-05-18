@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Path of Exile 0.5</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">A tiny real-time action RPG</p>
+          <h1>Path of Exile 0.5</h1>
+          <p class="lede">Clear randomized maps, loot tiered rare gear, craft brutal affixes, and open harder end-game maps.</p>
+        </div>
+        <div class="controls-card">
+          <strong>Controls</strong>
+          <span>WASD / Arrow keys move</span>
+          <span>Mouse aims • Click casts bolt</span>
+          <span>Q Nova • E Dash • R open map</span>
+          <span>I inventory • C craft selected</span>
+        </div>
+      </header>
+
+      <section class="game-wrap">
+        <canvas id="game" width="1120" height="720" aria-label="Path of Exile 0.5 game canvas"></canvas>
+        <aside id="panel" class="panel">
+          <h2>Exile</h2>
+          <div id="stats"></div>
+          <h2>Endgame Atlas</h2>
+          <div id="atlas"></div>
+          <h2>Inventory</h2>
+          <div id="inventory"></div>
+          <h2>Crafting</h2>
+          <p>Select an item, then press <kbd>C</kbd> or click craft. Items can have up to four tiered mods.</p>
+          <button id="craftButton">Craft selected item</button>
+          <div id="log" class="log"></div>
+        </aside>
+      </section>
+    </main>
+    <script src="src/game.js"></script>
+  </body>
+</html>
